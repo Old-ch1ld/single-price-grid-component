@@ -1,0 +1,151 @@
+/*----- BASIC SETUP -----*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #E5EFF5;
+  font-family: 'Karla';
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/*----- BLOCK SETUP -----*/
+
+.block {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.block__upper,
+.block__lower  {
+  display: flex;
+  flex-direction: column;
+}
+
+.block__lower {
+  align-items: center;
+  color: #fff;
+  width: 100%;
+}
+
+.block__upper,
+.block__lower__left,
+.block__lower__right {
+    width: 85%;
+}
+
+.block__upper {
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  padding: 25px;
+}
+
+.block__lower__left {
+  background-color: #2AB2AF;
+  padding: 25px;
+}
+
+.block__lower__right {
+  background-color: #2dc0bd;
+  padding: 25px;
+}
+
+/* BLOCK UPPER */
+
+.block__upper__heading {
+  color: #2AB2AF;
+  font-size: 1.4rem;
+}
+
+.block__upper__sub-heading {
+  color: #C0DF34;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.block__upper__text {
+  color: #98A6BD;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+/* BLOCK LOWER */
+
+/* LEFT */
+.block__lower__left__heading {
+  font-size: 1.1rem;
+}
+
+.block__lower__left__text {
+  line-height: 1.5;
+  margin: 15px auto 30px;
+}
+
+.block__lower__left__text__price--light {
+  color: #E5EFF5;
+  font-weight: 100;
+}
+
+.block__lower__left__text__price--big-bold {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.block__lower__left__btn {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   color: #fff;
+   width: 100%;
+   font-size: 15px;
+   font-family: 'Karla';
+   font-weight: 700;
+   padding: 15px;
+   background-color: #C0DF34;
+   -webkit-box-shadow: 1px 1px 20px 0 #208986;
+   -moz-box-shadow: 1px 1px 20px 0 #208986;
+   box-shadow: 1px 1px 20px 0 #208986;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.block__lower__left__btn:active,
+.block__lower__left__btn:hover {
+   background: #667813;
+   border: solid #667813 1px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+/* RIGHT */
+.block__lower__right {
+  border-radius: 0 0 5px 5px;
+}
+
+.block__lower__right__heading {
+  font-size: 1.1rem;
+}
+
+.block__lower__right__elements {
+  color: #E5EFF5;
+  list-style-type: none;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  font-weight: 100;
+  margin-top: 20px;
+}

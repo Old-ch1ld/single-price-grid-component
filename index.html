@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/queries.css">
+
   <title>Frontend Mentor | Single Price Grid Component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
-  Join our community
+  <section class="block">
+    <div class="block__upper">
+      <h1 class="block__upper__heading">Join our community</h1>
 
-  30-day, hassle-free money back guarantee
+      <h2 class="block__upper__sub-heading">30-day, hassle-free money back guarantee</h2>
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+      <p class="block__upper__text">
+        Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
 
-  Monthly Subscription
+    <div class="block__lower">
+      <div class="block__lower__left">
 
-  &dollar;29 per month
+        <h2 class="block__lower__left__heading">Monthly Subscription</h2>
 
-  Full access for less than &dollar;1 a day
+        <div class="block__lower__left__text">
+          <p class="block__lower__left__text__price"><span class="block__lower__left__text__price--big-bold">&dollar;29</span> <span class="block__lower__left__text__price--light">per month</span></p>
 
-  Sign Up
+          <p>Full access for less than &dollar;1 a day</p>
+        </div>
 
-  Why Us
+        <a class="block__lower__left__btn" type="button" name="button">Sign Up</a>
+      </div>
 
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      <div class="block__lower__right">
+        <h2 class="block__lower__right__heading">Why Us</h2>
+
+        <ul class="block__lower__right__elements">
+          <li>Tutorials by industry experts</li>
+          <li>Peer &amp; expert code review</li>
+          <li>Coding exercises</li>
+          <li>Access to our GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
